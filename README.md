@@ -16,12 +16,12 @@
 ### Coding
 
 - Complete boilerplate, frontend, backend, ES6
-- Backend & frontend tests using karma, mocha & sinon-chai
+- Unit tests using karma, mocha, sinon-chai
 - Lint with AirBnb coding style
 - Hot reload for front & tests 
 - Next-gen. material-design-components for the web
 - Modern VueJS framework
-- Webpack including Babel, SASS loader
+- Webpack including Babel, SASS loader and more
 - Docker build and lauch from GitHub
 
 ## Application
@@ -58,3 +58,5 @@ npm run test-backkend
 ``` bash
 docker-compose up -d
 ```
+![comming soon](https://www.googleapis.com/download/storage/v1/b/e80ar/o/da806a26-1014-4186-bbbb-c1de3b804cd1?generation=1506866902151101&alt=media)
+
