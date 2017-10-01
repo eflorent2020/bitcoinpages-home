@@ -1,0 +1,30 @@
+{
+    "note": "This is a Ghost blog engine configuration file",
+    "url" : "http://127.0.0.1:2368/r",
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host"     : "192.168.1.49",
+            "user"     : "root",
+            "password" : "mysql",
+            "database" : "ghost"
+        }
+    },
+    "server" : {
+          "host": "0.0.0.0",
+          "port": "2368"
+    },    
+    "auth": {
+        "type": "password"
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["file", "stdout"]
+    }
+}

@@ -1,0 +1,109 @@
+.gallery_col {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (min-width: 1024px){
+  .gallery_col {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;  
+  }
+}
+
+@media (max-device-width: 1024px)  {
+  .gallery_col {
+    width: 49%;
+  }
+}
+
+@media (max-device-width: 640px) {
+  .gallery_col {
+    width: 100%;
+  }
+}
+
+
+.post-full-image {
+    display: none;
+}
+
+.post-full-header {
+    padding: 12px;
+}
+
+.post-full-content {
+    padding-top: 0px;
+    padding-bottom : 0px;
+}
+
+div.contact, div.customFields, div.price {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+div.customFields {
+
+    color: #26a8ed;
+    text-decoration: none;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.customField {
+    margin-right: 2px;
+}
+
+.customValue {
+    margin-right: 12px;
+}
+
+div.contact a {
+    margin-top: -12px;
+}
+
+div.price {
+
+}
+
+div.contact a, div.price {
+
+}
+
+div.contact a, div.price {
+    will-change: transform, opacity;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Roboto, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 2.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    min-width: 88px;
+    height: 36px;
+    padding-top: 8px;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;   
+    color: white;
+    background-color: black;    
+}
+

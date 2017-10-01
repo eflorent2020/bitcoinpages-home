@@ -1,0 +1,44 @@
+version: '2'
+services:
+
+  nginx-proxy:
+    container_name: https-portal
+    image: steveltn/https-portal
+    ports:
+      - "443:443"  
+      - "80:80"       
+    volumes:
+      - /data/ssl_certs:/var/lib/https-portal
+      - /var/log/nginx:/var/log/nginx
+      - /etc/nginx/nginx.conf.erb:/var/lib/nginx-conf/nginx.conf.erb:ro
+      - /etc/nginx/default.ssl.conf.erb:/var/lib/nginx-conf/default.ssl.conf.erb:ro
+    environment:
+      - STAGE=staging
+      - DOMAINS=$VIRTUAL_HOST -> http://bitcoinpage:2368/
+
+  bitcoinpage:
+    build: .
+    container_name: bitcoinpage
+    image: eflorent/bitcoinpage
+    env_file:
+      - .env
+    depends_on:
+     - dbnode
+    restart: "always"
+    volumes:
+     - /data/ghost/content:/usr/src/bitcoinpage-home/node_modules/ghost/content
+
+  dbnode:
+    container_name: db${NODENUM}  
+    image: dayreiner/centos7-mariadb-10.1-galera  
+    ports:
+      - "${PRIVATE_IP}:3306:3306"
+    expose:
+     - "3306"
+     - "4567"
+     - "4444"              
+    env_file:
+      - .env      
+    volumes:
+     - /var/lib/mysql:/var/lib/mysql
+    restart: always
