@@ -16,5 +16,5 @@ ADD . /usr/src/bitcoinpage-home
 WORKDIR /usr/src/bitcoinpage-home
 RUN npm i
 RUN npm run build
-ENTRYPOINT ["/usr/bin/node", "server/server.js"]
+CMD /usr/bin/node server/server.js
 
