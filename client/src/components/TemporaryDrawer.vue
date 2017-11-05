@@ -218,6 +218,8 @@ export default {
 }
   </style>
 <style lang="scss">
+@import '@material/ripple/mdc-ripple';
 @import '@material/list/mdc-list';
 @import '@material/drawer/mdc-drawer';
+
 </style>

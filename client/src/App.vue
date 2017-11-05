@@ -18,3 +18,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+
+
+<style lang="scss">
+@import "material-components-web/material-components-web";
+</style>

@@ -10,6 +10,7 @@ RUN apt-get install -qy zip build-essential wget curl sudo git
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN apt install -y nodejs
 RUN npm install -g knex-migrator
+RUN npm install -g webpack
 RUN mkdir /usr/src/bitcoinpage-home
 ADD . /usr/src/bitcoinpage-home
 WORKDIR /usr/src/bitcoinpage-home
