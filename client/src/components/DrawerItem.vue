@@ -1,9 +1,3 @@
-<!-- the demo root element -->
-
-
-<!-- item template -->
-
-
 <template>
 
     <ul class="mdc-list" v-show="open" v-if="isFolder">

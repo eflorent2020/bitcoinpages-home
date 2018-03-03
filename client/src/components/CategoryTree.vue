@@ -1,4 +1,3 @@
-<!-- the demo root element -->
 <template>
 <div class="mdc-simple-menu" style="position: absolute;" tabindex="-1">
   <ul class="category-tree mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">

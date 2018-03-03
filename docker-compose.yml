@@ -16,15 +16,12 @@ services:
       - STAGE=staging
       - DOMAINS=$VIRTUAL_HOST -> http://bitcoinpage:2368/
 
-  bitcoinpage:
+  bitcoinpages:
     build: .
     container_name: bitcoinpage
-    image: eflorent/bitcoinpage
+    image: gcr.io/bitcoinpages-185710/bitcoinpages-home:v1
     env_file:
       - .env
-    depends_on:
-     - dbnode
-    restart: "always"
     volumes:
      - /data/ghost/content:/usr/src/bitcoinpage-home/node_modules/ghost/content
 

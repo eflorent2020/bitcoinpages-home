@@ -187,10 +187,5 @@ export default {
   margin: 4px;
 }
 </style>
-<style lang="scss">
-@import "@material/typography/mdc-typography";
-@import '@material/card/mdc-card';
-@import '@material/button/mdc-button';
-@import '@material/snackbar/mdc-snackbar';
-</style>
+
 
