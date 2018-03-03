@@ -1,9 +1,3 @@
-<!-- the demo root element -->
-
-
-<!-- item template -->
-
-
 <template>
   <li role="menuitem" class="mdc-list-item" :class="{open: isOpen,  selected: isSelected, hide: isHidden}">
     <span      

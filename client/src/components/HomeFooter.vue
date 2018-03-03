@@ -20,14 +20,13 @@ export default {
 .home-footer {
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  height: 24px;
-  padding: 12px;
   text-align: center;
   width: 100%;
   background-color: white;
   position:fixed;
   bottom:0;
-  font-size: 20px;
+  padding-top: 12px;
+  font-size: 18px;
 }
 a {
   margin: 12px;

@@ -32,7 +32,9 @@ export default {
 </script>
 
 <style>
-
+.hello {
+  margin-top: 100px;
+}
 main {
   padding: 0px;
   margin: 0px;
@@ -81,10 +83,5 @@ $mdc-theme-accent:  rgb(255, 235, 59);
 $mdc-theme-background: rgb(25,118,210);
 $mdc-theme-background-lighter: rgba( 13,71,161, .75);
 $mdc-theme-background-lighter2: rgba( 13,71,161, .65);
-
-@import '@material/ripple/mdc-ripple';
-@import '@material/typography/mdc-typography';
-@import '@material/dialog/mdc-dialog';
-@import '@material/textfield/mdc-textfield';
 
 </style>

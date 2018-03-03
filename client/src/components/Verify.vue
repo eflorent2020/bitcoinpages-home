@@ -39,10 +39,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  @import '@material/button/mdc-button';
-  @import '@material/card/mdc-card';
-</style>
+
 
 <style lang="css" scoped>
 

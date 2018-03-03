@@ -89,7 +89,3 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '@material/toolbar/mdc-toolbar';
-@import '@material/menu/mdc-menu';
-</style>

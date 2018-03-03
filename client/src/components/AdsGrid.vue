@@ -174,7 +174,7 @@ h1 {
   text-align: center;
 }
 .listpage {
-    margin-top: 72px;
+    margin-top: 84px;
     width: 100%;
 }
 
@@ -234,16 +234,6 @@ article span {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 .text_title {
   padding: 8px;
